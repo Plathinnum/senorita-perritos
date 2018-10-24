@@ -1,0 +1,120 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Inicio{% endblock title %}
+{% block content %}
+	<div class="landing">
+		<div class="slider">
+			<div>
+				<img title="Imagen de apolo" class="landing_image" src="{% static 'core/img/adoptados/Apolo.jpg' %}" alt="imagen de apolo">
+			</div>
+			<div>
+				<img title="Imagen de duque" class="landing_image" src="{% static 'core/img/adoptados/Duque.jpg' %}" alt="imagen de duque">
+			</div>
+			<div>
+				<img title="Imagen de tom" class="landing_image" src="{% static 'core/img/adoptados/Tom.jpg' %}" alt="imagen de tom">
+			</div>
+		</div>
+		<ul class="main">
+				<h2 class="number">+56 9 98765431</h2>
+				<h3 class="mission">Rescate y adopción de perros callejeros</h3>
+			<ul class="social">
+				<li>
+					<img src="{% static 'core/img/socialfacebook.png' %}" alt="Facebook">
+				</li>
+				<li>
+					<img src="{% static 'core/img/socialplus.png' %}" alt="Google Plus">
+				</li>
+				<li>
+					<img src="{% static 'core/img/social-inst.png' %}" alt="Instagram">
+				</li>
+				<li>
+					<img src="{% static 'core/img/socialcorreo.png' %}" alt="Correo">
+				</li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="column">
+			<div class="content_left">
+				<p class="content_left_title">
+					RESCATE
+				</p>
+				<p class="content_left_subtitle">
+					ETAPA UNO
+				</p>
+				<br>
+				<br>
+				<hr class="content_left_line"/>
+				<br>
+				<br>
+				<p class="content_left_text">
+					Rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y los <br> preparamos para buscarles un hogar.</p>
+				</p>
+				<br>
+				<br>
+				<img class="content_left_image" src="{% static 'core/img/rescate.jpg' %}" alt="imagen rescate">
+			</div>
+		</div>
+		<div class="column">
+			<div class="content_right">
+				<img class="content_right_image" src="{% static 'core/img/crowfunding.jpg' %}" alt="imagen crowdfunding">
+				<p class="content_right_title">CROWDFUNDING</p>
+				<P class="content_right_subtitle">FINANCIAMIENTO</P>
+				<br>
+				<br>
+				<hr class="content_right_line">
+				<br>
+				<br>
+				<p class="content_right_text">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y <br> actividades que realizamos para obtener financiamiento para seguir ayudando.</p>
+				<br>
+				<br>
+				<ul>
+					<button class="content_right_button">CAMPAÑAS</button>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="imgal">
+	<div class="colver2">
+			<div class="images_left">
+				<a data-fancybox="gallery" href="{% static 'core/img/rescatados/Oso.jpg' %}" data-caption="Oso. Un Bichón habanero de 1 año proveniente de Viña del Mar">
+					<img class="image1" src="{% static 'core/img/rescatados/Oso.jpg' %}">
+				</a>
+				<br>
+				<a data-fancybox="gallery" href="{% static 'core/img/rescatados/Maya.jpg' %}" data-caption="Maya. Boxer de 4 meses nacido dentro de la fundacion">
+					<img class="image2" src="{% static 'core/img/rescatados/Maya.jpg' %}">
+				</a>
+				<br>
+				<a data-fancybox="gallery" href="{% static 'core/img/rescatados/Wifi.jpg' %}" data-caption="Wifi. Es un Border Terrier de 1 año traido por una familia de La Florida">
+					<img class="image3" src="{% static 'core/img/rescatados/Wifi.jpg' %}">
+				</a>
+			</div>
+		</div>
+		<div class="colver2">
+			<div class="images_center">
+				<a data-fancybox="gallery" href="{% static 'core/img/rescatados/Chocolate.jpg' %}" data-caption="Chocolate. De raza Vizsla este can de 4 años fue recientemente traido desde Puente Alto">
+					<img class="image4" src="{% static 'core/img/rescatados/Chocolate.jpg' %}">
+				</a>
+				<br>
+				<a data-fancybox="gallery" href="{% static 'core/img/rescatados/Pexel.jpg' %}" data-caption="Pexel. Un Terrier de 5 meses proveniente de Providencia">
+					<img class="image5" src="{% static 'core/img/rescatados/Pexel.jpg' %}">
+				</a>
+			</div>
+		</div>
+		<div class="colver2">
+			<div class="images_right">
+				<a data-fancybox="gallery" href="{% static 'core/img/rescatados/Bigotes.jpg' %}" data-caption="Bigotes. Es Schnauzer de 2 años encontrado en las calles de Ñuñoa">
+					<img class="image6" src="{% static 'core/img/rescatados/Bigotes.jpg' %}">
+				</a>
+				<br>
+				<a  data-fancybox="gallery" href="{% static 'core/img/rescatados/Luna.jpg' %}" data-caption="Luna. Un Beagle de tan solo 2 meses rescatado en Macul">
+					<img class="image7" src="{% static 'core/img/rescatados/Luna.jpg' %}">
+				</a>
+			</div>
+		</div>
+	</div>
+{% endblock content %}

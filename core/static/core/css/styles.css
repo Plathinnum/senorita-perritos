@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(133,212,183);
+}
+.logo{
+    width: 329px;
+    height: 60px;
+    margin-top:10px;
+    margin-left: 20px;
+    float: left;
+}
+.navigation{
+    padding-right:350px;
+    text-align:center;
+    white-space: nowrap;
+
+}
+.navigation li{
+    display:inline-block;
+    padding-left:10px;
+    margin-top: 25px;
+}
+.navigation li a {
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.landing{
+    background-color: rgb(109,204,170);
+    height:750px;
+    color:white;
+}
+.bx-wrapper{
+    background-color: rgb(109,204,170)!important;
+    border: none!important;
+    margin: none!important;
+    padding: none!important;
+    box-shadow: none!important;
+}
+/*.slider{
+    padding: 10px;
+}*/
+.landing_image{
+    margin:auto;
+    display:block;
+    padding:20px;
+    height:auto;
+    width:800px;
+    max-width: 80%;
+    
+}
+.main{
+    margin: 100px;
+    white-space: nowrap;
+}
+.number{
+    font-size:25px;
+    float: left;
+    width: 22%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.mission{
+    font-size:20px;
+    float: left;
+    width: 46%;
+    text-align: center;
+    white-space: nowrap;
+    margin: 1px;
+}
+
+.main li{
+    display:inline-block;
+    margin-right:10px;
+}
+.social{
+    float:left;
+    text-align:right;
+    width: 31%;
+}
+.social li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.social li img{
+    height:50px;
+    width:50px;
+}
+.column{
+    margin-top: 15px;
+    float: left;
+    width: 50%;
+}
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.content_left{
+    padding-right: 10px;
+    text-align-last: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_left_title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.content_left_subtitle{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.content_left_text{
+    font-size: 17px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+.content_left_line{
+    float: right;
+    width: 10%;
+    border:2px solid black;
+}
+.content_left_image{
+    max-width: 250px;
+    max-height: 140px;
+    width: 80%;
+    height: auto;
+}
+.content_right{
+    padding-left: 10px;
+    text-align-last: left;
+}
+.content_right_title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.content_right_subtitle{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.content_right_text{
+    font-size: 17px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+.content_right_image{
+    max-width: 250px;
+    max-height: 210px;
+    width: 80%;
+    height: auto;
+}
+.content_right_line{
+    width: 10%;
+    border:2px solid black;
+}
+.content_right_button{
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(75, 46, 46);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(230,230,230);
+    height: 100px;
+}
+.footer_text{
+    font-weight: 100;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.imgal{
+    background-color: rgb(109,204,170);
+    height: auto;
+    max-height: 1100px;
+    padding-bottom: 25px;
+}
+.imgal:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.colver2{
+    margin-top: 15px;
+    float: left;
+    width: 33%;
+}
+.images_left{
+    float: right;
+    padding-left: 30px;
+}
+.images_center{
+    column-width: 10%;
+    text-align: center;
+}
+.images_right{
+    float: left;
+    padding-right: 70px;
+}
+.image1{
+    max-width: 110%;
+    height: auto;
+    padding-top: 10px;
+}
+.image2{
+    max-width: 90%;
+    height: auto;
+    padding-top: 10px;
+}
+.image3{
+    max-width: 90%;
+    height: auto;
+    padding-top: 10px;
+}
+.image4{
+    max-width: 70%;
+    height: auto;
+    padding-top: 10px;
+}
+.image5{
+    max-width: 70%;
+    height: auto;
+    padding-top: 10px;
+}
+.image6{
+    width: 115%;
+    height: auto;
+    padding-top: 10px;
+}
+.image7{
+    width: 115%;
+    height: auto;
+    padding-top: 10px;
+}
+.form{
+	background-image:url('http://buysellgraphic.com/images/graphic_preview/large/dog_foot_prints_background_repeating_design_30213.jpg');
+    /*background-image: url('../img/german-shepherd-puppy.jpg');*/
+    padding-top: 80px;
+    padding-bottom: 80px;
+	/*background-repeat:no-repeat;
+	background-position:left;*/
+}
+.form_content{
+    text-align: center;
+}
+.form_content_form{
+    border-style: solid;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 50px;
+    color:black;
+}
+.form_content_form_text{
+    text-align: left;
+}
+.info{
+    width: 150px;
+}
+@media (max-width:1024px){
+    header{
+        height: auto;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 10px; 
+    }
+    .logo{
+        width: 70%;
+        height: auto;
+        margin: 0;
+        float: none;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .navigation{
+        width: 100%;
+        float: none;
+        margin: auto;
+        padding-right: 0;
+        white-space: normal;
+        
+    }
+    .navigation li{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2px;
+        background-color: rgb(109,204,170);
+        height: 40px;
+        padding-top: 15px;
+        padding-left: 0;
+    }
+    .navigation li a{
+        padding-top: 50px;
+    }
+    .landing{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0; 
+    }
+    .landing_image{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .main{
+        text-align: center;
+        float: none;
+        white-space: normal;
+        margin: 10px;
+    }
+    .number{
+        text-align: center;
+        float: none;
+        width: 100%
+    }
+    .mission{
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
+        margin: none;
+        padding: none;
+        float: none;
+        white-space: normal;
+    }
+    .social{
+        text-align: center;
+        float: none;
+        margin:0;
+        margin-top: 20px;
+        white-space: nowrap;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .row{
+        height: auto;
+        padding-left: 20px;
+    }
+    .column{
+        width: auto;
+        max-width: 90%;
+        padding-left: 10px;
+    }
+    .images_right{
+        padding-right: 30px;
+    }
+    .form_content_form{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
