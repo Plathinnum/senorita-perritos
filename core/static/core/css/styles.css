@@ -262,9 +262,10 @@ footer{
 .form_content_form{
     border-style: solid;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(255, 255, 255, 0.88);
     padding: 50px;
     color:black;
+	text-align:left;
 }
 .form_content_form_text{
     text-align: left;
