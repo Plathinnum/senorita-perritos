@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}
+	Modificar perrito
+{% endblock title %}
+{% block content %} 
+<body>
+	<div class="form">
+	   <div class="form_content"> 
+			<div class="form_content_form">
+					<h2>Editando a {{ perrito.nombre }}</h2>
+					<br>
+					<br>
+					<form method="POST" enctype="multipart/form-data" class="post-form">
+						{% csrf_token %}
+						{{ form.as_p }}
+						<button type="submit" class="save btn btn-default">Guaurdar!</button>
+					</form>
+			</div>  
+		</div>
+	</div>
+</body>
+{% endblock content %}

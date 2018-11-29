@@ -1,1 +1,17 @@
-Gracias
+{% extends "base.html" %}
+{% block title %}Contacto{% endblock title %}
+{% block content %}
+    <body>
+        <div class="form">
+            <div class="form_content"> 
+                <div class="form_content_form" style="text-align:center">
+                    <h1>Ingresado correctamente</h1>
+                    <br>
+                    <h3 style="color:grey">GRACIAS</h3>
+                    <br>
+                    <a href="{% url 'home' %}">Regresar al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock content %}

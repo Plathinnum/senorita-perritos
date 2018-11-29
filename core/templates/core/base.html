@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fundacion MisPerris - {% block title %}{% endblock title %}</title>
+    <title>Fundación MisPerris - {% block title %} {% endblock title %}</title>
     
     <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -22,24 +22,43 @@
 	</a>
         <ul class="navigation">
             <li>
-                <a href="{% url 'home' %}">inicio</a>
+                <a href="{% url 'home' %}">Inicio</a>
             </li>
             <li>
-                <a href="#">quienes somos</a>
+                <a href="#">Quiénes somos</a>
             </li>
             <li>
-                <a href="#">servicios</a>
+                <a href="{% url 'galeria' %}">Galería</a>
             </li>
             <li>
-                <a href="{% url 'form' %}">contáctanos</a>
+                <a href="{% url 'form' %}">Contáctanos</a>
             </li> 
 			<li>
-                <a href="{% url 'newperrito' %}">adoptar</a>
+                <a href="{% url 'adopcion' %}">Adopción</a>
             </li> 
-			<li>
-				Hola, {{request.user.username}}!
-				
-			</li>
+            <li>
+                <a href="{% url 'listar' %}">Listar</a>
+            </li> 
+        </ul>
+        <ul class="navi_user">
+            {% if user.is_authenticated %}
+                <ul class="usbutton">
+                    <li>
+                        <a href="/admin/"> Bienvenido/a: {{request.user.username}}!</a>
+                    </li>
+                </ul>
+                <ul class="logbutton">
+                    <li>
+                         <a href="{% url 'logout' %}">LOGOUT</a>
+                    </li>
+                </ul>
+            {% else %}
+                    <ul class="logbutton">
+                        <li>
+                            <a href="{% url 'login' %}">LOGIN</a>
+                        </li>
+                    </ul>
+            {% endif %}
         </ul>
     </header>
     <div class="home">

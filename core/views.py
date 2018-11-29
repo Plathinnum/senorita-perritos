@@ -1,9 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ContactForm
-from django.shortcuts import redirect
-
-def home(request):
-    return render(request, 'core/home.html')
 
 def thanks(request):
     return render(request, 'core/thanks.html')
@@ -18,3 +14,4 @@ def form(request):
     else:
         form = ContactForm()
     return render(request, 'core/form.html', {'form': form})
+

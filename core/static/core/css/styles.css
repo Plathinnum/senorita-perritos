@@ -19,10 +19,10 @@ header{
     float: left;
 }
 .navigation{
-    padding-right:350px;
     text-align:center;
     white-space: nowrap;
-
+    float: left;
+    padding-left: 150px;
 }
 .navigation li{
     display:inline-block;
@@ -30,6 +30,22 @@ header{
     margin-top: 25px;
 }
 .navigation li a {
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navi_user{
+    text-align:center;
+    white-space: nowrap;
+    margin-right: 20px;
+    float: right;
+}
+.navi_user li{
+    display:inline-block;
+    padding-left:10px;
+    
+}
+.navi_user li a{
     color:white;
     font-size: 18px;
     text-decoration: none;
@@ -45,18 +61,17 @@ header{
     margin: none!important;
     padding: none!important;
     box-shadow: none!important;
-}
-/*.slider{
-    padding: 10px;
-}*/
-.landing_image{
     margin:auto;
     display:block;
     padding:20px;
     height:auto;
     width:800px;
-    max-width: 80%;
-    
+    max-width: 100%;
+}
+.landing_image{
+    width:100%;
+    padding-top: 25px;
+    max-height: 550px;
 }
 .main{
     margin: 100px;
@@ -178,12 +193,13 @@ header{
 footer{
     background-color: rgb(230,230,230);
     height: 100px;
+    margin-top: 30px;
 }
 .footer_text{
     font-weight: 100;
     font-size: 20px;
     padding-left: 30px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .imgal{
     background-color: rgb(109,204,170);
@@ -273,6 +289,182 @@ footer{
 .info{
     width: 150px;
 }
+.titulo{
+    padding-top: 10px; 
+    text-align: center;
+}
+.caja_gal{
+    width:310px;
+    height:310px;
+    border:2px dashed grey;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5%;
+    padding: 10px;
+}
+.caja_gal:hover{
+    border:2px solid teal;
+    background-image: linear-gradient(aquamarine, whitesmoke)
+}
+.caja_nom{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color:grey;
+}
+.caja_img{
+    height: 200px;
+    width: 200px;
+    margin:0 auto;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+    border: 2px solid aquamarine;
+}
+.caja_img a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.caja_des{
+    text-align: center;
+    font-size: 17px;
+    height:42px;
+}
+.caja_datos{
+    color: teal;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 15px;
+}
+/*.home{
+    padding-bottom: 30px;
+}*/
+.link_adoptar{
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.link_adoptar a{
+    border:1px solid black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    color: grey;
+    font-weight: bolder;
+}
+.link_adoptar a:hover{
+    background-image: linear-gradient(aquamarine, whitesmoke)
+}
+.logbutton{
+    display: inline-block;
+}
+.logbutton li{
+    margin-left: 20px;
+    margin-top:10px;
+    width: 100px;
+    height: 34px;
+    text-align: center;
+    padding-top:15px;
+    background-color: teal;
+    transition: border-radius 0.5s;
+    padding-left: 0;
+}
+.navi_user li:hover {
+    border-radius: 20px;
+}
+.usbutton{
+    display: inline-block;
+}
+.caja_gal_lis{
+    width: 75%;
+    margin:auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aquamarine;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.caja_img_lis{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+    border: 2px solid aquamarine;
+    position: absolute;
+}
+.caja_img_lis a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.caja{
+    word-wrap: break-all;
+    text-overflow: ellipsis;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    line-height: 140px;
+}
+.caja1{
+    display: inline-block;
+    width: 12%;
+    
+}
+.caja2{
+    display: inline-block;
+    width: 35%;
+    
+}
+.caja3{
+    display: inline-block;
+    width: 15%;
+    
+}
+.caja4{
+    display: inline-block;
+    width: 8%;
+    
+}
+.caja5{
+    display: inline-block;
+    width: 8%;
+    
+}
+.caja6{
+    display: inline-block;
+    width: 8%;
+    
+}
+.btneditar{
+    display: inline-block;
+    width: 8%;
+    position: absolute;
+    right: 0px;
+
+}
+@media (max-width:1315px){
+    .navigation{
+        padding-left: 10px;
+    }
+    .logbutton{
+        display: flex;
+    }
+    .logbutton li{
+        margin-top: 0;
+    }
+    .navi_user{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
 @media (max-width:1024px){
     header{
         height: auto;
@@ -294,7 +486,7 @@ footer{
         margin: auto;
         padding-right: 0;
         white-space: normal;
-        
+        padding-left: 0;
     }
     .navigation li{
         width: 100%;
@@ -308,6 +500,33 @@ footer{
     .navigation li a{
         padding-top: 50px;
     }
+    .navi_user{
+        width: 100%;
+        float: none;
+        margin: auto;
+        padding-right: 0;
+        white-space: normal;
+        padding-left: 0;
+    }
+    .navi_user li{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2px;
+        background-color: rgb(109,204,170);
+        height: 40px;
+        padding-top: 15px;
+        padding-left: 0;
+    }
+    .usbutton{
+        display: flex;
+    }
+    .logbutton li{
+        background-color: teal;
+    }
+    .user{
+        float: none;
+        margin: 0;
+    }
     .landing{
         width: 100%;
         height: auto;
@@ -319,6 +538,7 @@ footer{
         height: auto;
         padding: 0;
         margin: 0;
+        padding-top: 10px;
     }
     .main{
         text-align: center;

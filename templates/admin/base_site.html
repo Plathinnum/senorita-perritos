@@ -1,0 +1,44 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrastyle %}
+
+<style>
+    #header{
+        background-color: rgb(133,212,183)!important;
+    }
+    #branding h1, #branding h1 a:link, #branding h1 a:visited{
+        color: white;
+    }
+    #header{
+        color: white;
+    }
+    .module h2, .module caption, .inline-group h2{
+        background-color: rgb(109,204,170)!important;
+    }
+    a:link, a:visited{
+        color: grey;
+    }
+    div.breadcrumbs{
+        background-color: rgb(109,204,170);
+    }
+    .button, input[type=submit], input[type=button], .submit-row input, a.button{
+        background-color: teal!important;
+    }
+    .button{
+        color: white!important;
+    }
+    #changelist #toolbar form input[type="submit"]{
+        color: white!important;
+    }
+
+</style>
+
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

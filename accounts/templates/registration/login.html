@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+{% block title %}Contacto{% endblock title %}
+{% block content %}
+
+<body>
+    <div class="form">
+       <div class="form_content"> 
+            <div class="form_content_form">
+                <h2>Login</h2>
+                <br>
+                <form method="post">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  <br>
+                  <button type="submit">Ingresar</button>
+                </form>
+                <br>
+                <form>
+                    <br>
+                    <button formaction="{% url 'signup' %}">Registrarse</button>
+                    <br>
+                    <br>
+                    <button formaction="{% url 'social:begin' 'facebook' %}">Ingreso con Facebook</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+</body>
+{% endblock content %}

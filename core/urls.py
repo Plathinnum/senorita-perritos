@@ -1,8 +1,9 @@
-from django.urls import path
-from .views import home, form,thanks
+from django.contrib import admin
+from django.urls import path, include
+from .views import form,thanks
 
 urlpatterns = [
-    path('', home, name="home"),
     path('form/', form, name="form"),
 	path('form/thanks/', thanks, name="thanks"),
+    path('admin/',admin.site.urls),
 ]

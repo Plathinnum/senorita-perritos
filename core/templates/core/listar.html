@@ -1,0 +1,40 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}
+	Lista perritos
+{% endblock title %}
+{% block content %} 
+	<div class="gallery">
+		<h1 class="titulo">Lista de perritos</h1>
+	<div class="caja_gal_lis" style="height: 30px;">
+		<div style="font-weight: bold; display: inline-block; width: 90%; float: right; position: relative; height: 100%;">
+			<div class="caja caja1" style="line-height: 30px;">Nombre</div>
+			<div class="caja caja2" style="line-height: 30px;">Descripción</div>
+			<div class="caja caja3" style="line-height: 30px;">Raza - Sexo</div>
+			<div class="caja caja4" style="line-height: 30px;">Nacimiento</div>
+			<div class="caja caja5" style="line-height: 30px;">Ingreso</div>
+			<div class="caja caja6" style="line-height: 30px;">Estado</div>
+		</div>
+	</div>
+	{% for Perrito in doggy %}
+		<div class="caja_gal_lis">
+			<div class="caja_img_lis" style="background-image: url('{{Perrito.imagen.url}}')">
+				<a data-fancybox="gallery" href="{{Perrito.imagen.url}}" data-caption="{{Perrito.nombre}}. {{Perrito.descripcion}}"></a>
+			</div>
+			<div style="display: inline-block; width: 90%; float: right; position: relative; height: 100%;">
+				<div class="caja caja1">{{Perrito.nombre}}</div>
+				<div class="caja caja2">{{Perrito.descripcion}}</div>
+				<div class="caja caja3">{{Perrito.raza}} - {% if Perrito.genero == 'H' %}Hembra{% else %}Macho{% endif %}</div>
+				<div class="caja caja4">{{Perrito.fecha_nacimiento|date:"d/m/Y"}}</div>
+				<div class="caja caja5">{{Perrito.fecha_ingreso|date:"d/m/Y"}}</div>
+				<div class="caja caja6">{{Perrito.estado}}</div>
+				{% if user.is_authenticated %}
+					<div class="caja btneditar">
+						<a href="{% url 'editarperrito' id=Perrito.id %}">Editar</a>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	{% endfor%}
+	</div>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}
+	Galería
+{% endblock title %}
+{% block content %} 
+	<div class="gallery">
+		<h1 class="titulo">Perritos rescatados</h1>
+	{% for Perrito in doggy %}
+		<div class="caja_gal">
+			<div class="caja_img" style="background-image: url('{{Perrito.imagen.url}}')">
+				<a data-fancybox="gallery" href="{{Perrito.imagen.url}}" data-caption="{{Perrito.nombre}}. {{Perrito.descripcion}}"></a>
+			</div>
+			<div class="caja_nom">{{Perrito.nombre}}</div>
+			<div class="caja_des">{{Perrito.descripcion}}</div>
+			<div class="caja_datos">{{Perrito.raza}} - {% if Perrito.genero == 'H' %}Hembra{% else %}Macho{% endif %}</div>
+		</div>
+	{% endfor%}
+	</div>
+{% endblock content %}
